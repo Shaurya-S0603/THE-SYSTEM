@@ -1,0 +1,14 @@
+{
+  "name": "the-system",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Offline Android productivity alpha",
+  "scripts": {
+    "test": "node --test tests/engine.test.cjs tests/security.test.cjs",
+    "check": "node --check android/app/src/main/assets/engine.js && node --check android/app/src/main/assets/app.js",
+    "test:ui": "node tests/ui.cjs"
+  },
+  "devDependencies": {
+    "playwright": "1.62.1"
+  }
+}
